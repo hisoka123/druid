@@ -125,7 +125,7 @@ public class SQLParser {
                     case NEW:
                     case INTERVAL:
                     case LOCK:
-                    case LIMIT:
+                    //case LIMIT:
                     case IDENTIFIED:
                     case PASSWORD:
                     case BINARY:

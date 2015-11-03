@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<!-- <parent> <groupId>com.alibaba</groupId> <artifactId>parent-pom</artifactId> <version>1.0.0-SNAPSHOT</version> </parent> -->
 
-	<groupId>com.alibaba</groupId>
+	<groupId>com.sr</groupId>
 	<artifactId>druid</artifactId>
 	<version>1.0.16</version>
 
 	<packaging>jar</packaging>
 	<name>druid</name>
 	<description>An JDBC datasource implementation.</description>
-	<url>https://github.com/alibaba/druid</url>
+	<url>https://github.com/hisoka/druid</url>
 	<inceptionYear>2013</inceptionYear>
 
 	<properties>
@@ -447,13 +447,11 @@
 			<version>9.1-901-1.jdbc4</version>
 			<scope>provided</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.3</version>
-			<scope>provided</scope>
-		</dependency>
+<dependency>
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc6</artifactId>
+    <version>11.2.0.3</version>
+</dependency>
 
 		<dependency>
 			<groupId>org.quartz-scheduler</groupId>
@@ -496,16 +494,15 @@
 			<version>0.7.1.RELEASE</version>
 			<scope>test</scope>
 		</dependency>
+	<dependency>
+	<groupId>com.cloudhopper.proxool</groupId>
+	<artifactId>proxool-cglib</artifactId>
+	<version>0.9.1</version>
+</dependency>
 		<dependency>
-			<groupId>proxool</groupId>
-			<artifactId>proxool</artifactId>
-			<version>0.9.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>proxool</groupId>
-			<artifactId>proxool-cglib</artifactId>
-			<version>0.9.1</version>
+	<groupId>com.cloudhopper.proxool</groupId>
+	<artifactId>proxool-cglib</artifactId>
+	<version>0.9.1</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -551,7 +548,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.taobao.tbdatasource</groupId>
 			<artifactId>tbdatasource</artifactId>
 			<version>2.0.2</version>
@@ -562,7 +559,7 @@
 					<artifactId>jboss-j2ee</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.javasimon</groupId>
