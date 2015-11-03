@@ -93,6 +93,9 @@ public class SQLParserUtils {
         if (JdbcUtils.ODPS.equals(dbType)) {
             return new OdpsExprParser(sql);
         }
+        if (null==dbType) {
+            return new PGExprParser(sql);
+        }
 
         return new SQLExprParser(sql);
     }

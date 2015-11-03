@@ -51,6 +51,7 @@ import com.alibaba.druid.support.json.JSONWriter;
 import com.alibaba.druid.support.logging.Log;
 import com.alibaba.druid.support.logging.LogFactory;
 import com.alibaba.druid.support.profile.Profiler;
+import com.alibaba.druid.util.JdbcUtils;
 
 /**
  * @author wenshao<szujobs@hotmail.com>
@@ -84,7 +85,7 @@ public class StatFilter extends FilterEventAdapter implements StatFilterMBean {
 
     protected boolean                 logSlowSql                 = false;
 
-    private String                    dbType;
+    private String                    dbType                     = JdbcUtils.POSTGRESQL;
 
     private boolean                   mergeSql                   = false;
 
